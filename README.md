@@ -1,37 +1,7 @@
-# MAAT: Mamba Adaptive Anomaly Transformer
-Authors: Abdellah Zakaria Sellam*, Ilyes Benaissa, Abdelmalik Taleb-Ahmed, Luigi
-Patrono, Cosimo Distante
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/maat-mamba-adaptive-anomaly-transformer-with/anomaly-detection-on-smd)](https://paperswithcode.com/sota/anomaly-detection-on-smd?p=maat-mamba-adaptive-anomaly-transformer-with)
-## Abstract
-Anomaly detection in time series poses a critical challenge in industrial moni-
-toring, environmental sensing, and infrastructure reliability, where accurately
-distinguishing anomalies from complex temporal patterns remains an open
-problem. While existing methods, such as the Anomaly Transformer lever-
-aging multi-layer association discrepancy between prior and series distribu-
-tions and DCdetector employing dual-attention contrastive learning, have
-advanced the field, critical limitations persist. These include sensitivity
-to short-term context windows, computational inefficiency, and degraded
-performance under noisy and non-stationary real-world conditions. To ad-
-dress these challenges, we present MAAT (Mamba Adaptive Anomaly Trans-
-former), an enhanced architecture that refines association discrepancy model-
-ing and reconstruction quality for more robust anomaly detection. Our work
-introduces two key contributions to the existing Anomaly transformer ar-
-chitecture: Sparse Attention, which computes association discrepancy more
-efficiently by selectively focusing on the most relevant time steps. This re-
-duces computational redundancy while effectively capturing long-range de-
-pendencies critical for discerning subtle anomalies. A Mamba-Selective State
-Space Model (Mamba-SSM) is also integrated into the reconstruction mod-
-ule. A skip connection bridges the original reconstruction and the Mamba-
-SSM output, while a Gated Attention mechanism adaptively fuses features
-from both pathways. This design balances fidelity and contextual enhancement dynamically, 
-improving anomaly localization and overall detection performance. 
-Extensive experiments on benchmark datasets demonstrate that
-MAAT significantly outperforms prior methods, achieving superior anomaly
-distinguishability and generalization across diverse time series applications.
-By addressing the limitations of existing approaches, MAAT sets a new stan-
-dard for unsupervised time series anomaly detection in real-world scenarios.
+# Cross Alignment of State Space Model and LLMs for Time Series Anomaly Detection
 
-Keywords:  MAAT, Transformer, Association Discrepancy, Gated Attention, Mamba-SSM, Sparse Attention, Anomaly Detection, Unsupervised Learning
+## Abstract
+The increasing volume of time series data across domains such as finance, energy, and healthcare has made time series anomaly detection (TSAD) a critical task. However, existing models often rely on a single representation branch, which leads to information loss and incomplete anomaly modeling. Second, while LLMs perform well in textual reasoning and cross-modal tasks, their application to purely numerical time series remains underexplored. Without proper guidance or adjustment, LLMs have difficulty identifying which dimensions or time regions are most relevant to the underlying signal features. To address these challenges, we propose a novel TSAD framework that tightly integrates the semantic reasoning capacity of LLMs with the efficient temporal modeling of state space models (SSMs). First, we introduce Principal Memory Distillation (PMD), a novel mechanism that enables LLMs to dynamically extract and retain principal temporal components most relevant to anomaly detection, enhancing their alignment with time series dynamics. Second, we design a dual time-branch joint enhancement architecture, where a semantic time branch (LLM-based) captures long-range dependencies and contextual reasoning, while a frequency-domain branch (based on Mamba SSM) models periodic and structural patterns. This hybrid design captures complementary features for more accurate and robust anomaly detection. Extensive experiments on five TSAD datasets and seven forecasting benchmarks demonstrate that our method significantly outperforms state-of-the-art baselines in precision, recall, and F1-score, while also exhibiting superior transferability and scalability across domains.
 
 ## Architecture
 ![alt text](img/full_maat.png)
