@@ -1,0 +1,28 @@
+@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.self_attn.in_proj_weight,| parameters:1769472
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.self_attn.in_proj_bias,| parameters:2304
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.self_attn.out_proj.weight,| parameters:589824
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.self_attn.out_proj.bias,| parameters:768
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.linear1.weight,| parameters:1572864
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.linear1.bias,| parameters:2048
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.linear2.weight,| parameters:1572864
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.linear2.bias,| parameters:768
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.norm1.weight,| parameters:768
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.norm1.bias,| parameters:768
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.norm2.weight,| parameters:768
+@@@@@@@@@@@@@@@ Layer:module.in_layer.transformer_encoder.layers.0.norm2.bias,| parameters:768
+
+4.7M
+
+
+
+@@@@@@@@@@@@@@@ Layer:module.encoder.mamba.A_log,| parameters:12288
+@@@@@@@@@@@@@@@ Layer:module.encoder.mamba.D,| parameters:1536
+@@@@@@@@@@@@@@@ Layer:module.encoder.mamba.in_proj.weight,| parameters:2359296
+@@@@@@@@@@@@@@@ Layer:module.encoder.mamba.conv1d.weight,| parameters:6144
+@@@@@@@@@@@@@@@ Layer:module.encoder.mamba.conv1d.bias,| parameters:1536
+@@@@@@@@@@@@@@@ Layer:module.encoder.mamba.x_proj.weight,| parameters:98304
+@@@@@@@@@@@@@@@ Layer:module.encoder.mamba.dt_proj.weight,| parameters:73728
+@@@@@@@@@@@@@@@ Layer:module.encoder.mamba.dt_proj.bias,| parameters:1536
+@@@@@@@@@@@@@@@ Layer:module.encoder.mamba.out_proj.weight,| parameters:1179648
+
+3.4M
