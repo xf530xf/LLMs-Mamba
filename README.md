@@ -8,7 +8,7 @@ The increasing volume of time series data across domains such as finance, energy
 
 ## Results
 ![alt text](image/2.png)
-![alt text](image/2.png)
+![alt text](image/3.png)
 
 ## Get Start
 1. Create new virtual environement with Python 3.10 .
